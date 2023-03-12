@@ -65,14 +65,14 @@ function Shop({
         <button onClick={handleGranny} disabled={!granny_unlocked || granny}>
           <img src="/assets/granny_m.png" alt="A nice granny" />
         </button>
-        <p>{granny_unlocked ? "+ 10" : "Locked"}</p>
+        <p>{granny_unlocked ? "+ 100" : "Locked"}</p>
       </StyledMenuItem>
 
       <StyledMenuItem hyper={hyper} hyper_unlocked={hyper_unlocked}>
         <button onClick={handleHyper} disabled={!hyper_unlocked || hyper}>
           <img src="/assets/star.png" alt="A bright star" />
         </button>
-        <p>{hyper_unlocked ? "+ 10" : "Locked"}</p>
+        <p>{hyper_unlocked ? "+ 1000" : "Locked"}</p>
       </StyledMenuItem>
     </StyledMenu>
   );
